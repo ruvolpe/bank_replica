@@ -4,7 +4,7 @@ import { StyledDiv } from "./style"
 function TotalMoney (entryList){
 
     function TotalAmount({entryList}){
-        let counter = 0
+        let counter = ""
         entryList.map((entry)=> {
             if (entry.kind ==="Entrada"){
                 counter += entry.amount
