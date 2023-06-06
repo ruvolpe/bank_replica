@@ -9,7 +9,6 @@ import TotalMoney from "./components/TotalMoney/TotalMoney";
 
 function App() {
   const [entryList, setEntryList] = useState([]);
-  console.log(entryList);
 
   if (entryList.length !== 0) {
     return (

@@ -10,6 +10,19 @@ export const StyledLi = styled.li`
   margin-bottom: 15px;
   border-radius: 4px;
   padding: 8px 18px;
+  
+  ${({entry}) => {
+     if(entry.kind === "Entrada"){
+        return`
+           border-left: 3px solid var(--color-color-secondary);
+         `
+     } else{
+        return`
+         border-left: 3px solid var(--color-grey-3);
+        `
+     }
+  }}
+
   @media (max-width: 678px) {
     width: calc(100vw - 32px);
   }

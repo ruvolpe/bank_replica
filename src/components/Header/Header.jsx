@@ -1,10 +1,10 @@
 import { StyledHeader } from "./style"
-import {TextStyledTitle} from "../../styles/styledTexts.js"
+import {TextStyledTitle2} from "../../styles/styledTexts.js"
 
 function Header (){
     return(
         <StyledHeader>
-            <TextStyledTitle><span>Nu</span> Kenzie</TextStyledTitle>
+            <TextStyledTitle2><span>Nu</span> Kenzie</TextStyledTitle2>
         </StyledHeader>
     )
 }
