@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const StyledMain = styled.main`
   display: grid;
-  padding: 32px 261px;
+  padding: clamp(4rem 8rem, 8rem 16rem);
   grid-template-columns: 1fr 2fr;
+  justify-items:center;
+  align-items: flex-start;
+  margin-top: 20px !important;
 
   .ValueForm {
     grid-column: 1 / 3;
@@ -15,7 +18,7 @@ export const StyledMain = styled.main`
   }
   .TotalMoney {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2/3;
   }
 
   @media (max-width: 678px) {
